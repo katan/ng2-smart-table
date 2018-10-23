@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { LocalDataSource } from '../../../../ng2-smart-table/lib/data-source/local/local.data-source';
+import { LocalDataSource } from '../../../../ngx-smart-table/lib/data-source/local/local.data-source';
 import { map } from 'rxjs/operators';
 
 @Injectable()

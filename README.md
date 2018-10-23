@@ -26,7 +26,7 @@ First thing you need to do is to import the ng2-smart-table directives into your
 
 ```
 
-import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { NgxSmartTableModule } from 'ngx-smart-table';
 
 ```
 
@@ -38,9 +38,9 @@ Then register it by adding to the list of directives of your module:
 @NgModule({
   imports: [
     // ...
-    
-    Ng2SmartTableModule,
-    
+
+    NgxSmartTableModule,
+
     // ...
   ],
   declarations: [ ... ]
@@ -50,7 +50,7 @@ Then register it by adding to the list of directives of your module:
 
 Now, we need to configure the table and add it into the template. The only <strong>required</strong> setting for the component to start working is a columns configuration.
 Let's register <i>settings</i> property inside of the component where we want to have the table and configure some columns [Settings documentation](https://akveo.github.io/ng2-smart-table/#/documentation):
-    
+
 ```
 settings = {
   columns: {
@@ -83,7 +83,7 @@ Finally let's put the ng2-smart-table component inside of the template:
 // ...
 ```
 At this step you will have a minimal configured table. All functions are available by default and you don't need to configure them anyhow, so now you can add/edit/delete rows, sort or filter the table, etc.
- 
+
 Still it seems like something is missing... Right, there is no data in the table by default. To add some, let's create an array property with a list of objects in the component. Please note that object keys are the same as in the columns configuration.
 
 ```
@@ -100,9 +100,9 @@ data = [
     username: "Antonette",
     email: "Shanna@melissa.tv"
   },
-  
+
   // ... list of items
-  
+
   {
     id: 11,
     name: "Nicholas DuBuque",
@@ -126,7 +126,7 @@ And pass the data to the table:
 ```
 
 Now you have some data in the table.
- 
+
 ## Further Documentation
 Installation, customization and other useful articles: https://akveo.github.io/ng2-smart-table/
 

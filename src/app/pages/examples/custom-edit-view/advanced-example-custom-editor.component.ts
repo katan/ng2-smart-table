@@ -6,7 +6,7 @@ import { CustomRenderComponent } from './custom-render.component';
 @Component({
   selector: 'advanced-example-custom-editor',
   template: `
-    <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
+    <ngx-smart-table [settings]="settings" [source]="data"></ngx-smart-table>
   `,
 })
 export class AdvancedExamplesCustomEditorComponent {

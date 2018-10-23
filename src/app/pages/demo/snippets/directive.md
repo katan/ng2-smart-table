@@ -3,9 +3,9 @@
 @NgModule({
   imports: [
     // ...
-    
-    Ng2SmartTableModule,
-    
+
+    NgxSmartTableModule,
+
     // ...
   ],
   declarations: [ ... ]
