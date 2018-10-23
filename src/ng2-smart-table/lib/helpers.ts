@@ -1,5 +1,3 @@
-import { cloneDeep } from 'lodash';
-
 /**
  * Extending object that entered in first argument.
  *
@@ -9,7 +7,7 @@ import { cloneDeep } from 'lodash';
  * object as first argument, like this:
  *   deepExtend({}, yourObj_1, [yourObj_N]);
  */
-export const deepExtend = function(...objects: Array<any>): any {
+export const deepExtend = function (...objects: Array<any>): any {
   if (arguments.length < 1 || typeof arguments[0] !== 'object') {
     return false;
   }
@@ -95,4 +93,22 @@ export function getDeepFromObject(object = {}, name: string, defaultValue?: any)
   });
 
   return typeof level === 'undefined' ? defaultValue : level;
+}
+
+//
+export function cloneDeep(x: any): any {
+  const recurseObj = x => typeof x === 'object' ? cloneDeep(x) : x
+  const cloneObj = (y: any, k: any) => {
+    y[k] = recurseObj(x[k])
+    return y
+  }
+  // Guard blocks
+  // Add extra for Date / RegExp if you want
+  if (!x) {
+    return x
+  }
+  if (Array.isArray(x)) {
+    return x.map(recurseObj)
+  }
+  return Object.keys(x).reduce(cloneObj, {})
 }

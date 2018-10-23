@@ -37,7 +37,7 @@ const assetFiles = [
 ];
 
 /** Builds components to UMD bundle. */
-task('build:table',  ()  => task(':build:table:bundle:umd'));
+task('build:table', () => task(':build:table:bundle:umd'));
 
 /** Builds components for ng2-smart-table releases */
 task(':build:table:release', sequenceTask(
@@ -130,8 +130,7 @@ const ROLLUP_GLOBALS = {
   'rxjs/operators': 'Rx.operators',
 
   // 3rd party dependencies
-  'ng2-completer': 'ng2completer',
-  'lodash': 'lodash',
+  'ng2-completer': 'ng2completer'
 };
 
 /** Creates a rollup bundles of the ng2-smart-table components.*/
