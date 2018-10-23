@@ -1,15 +1,15 @@
 {
-  "name": "ngx-smart-table",
+  "name": "ngx-smart-table-nodependencies",
   "version": "2.0.0-beta.1",
-  "description": "Angular Smart Table",
+  "description": "Angular Smart Table (no dependencies)",
   "author": "Akveo <contact@akveo.com>",
   "homepage": "http://akveo.github.io/ng2-smart-table/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/akveo/ng2-smart-table.git"
+    "url": "https://github.com/katan/ng2-smart-table.git"
   },
   "bugs": {
-    "url": "https://github.com/akveo/ng2-smart-table/issues"
+    "url": "https://github.com/katan/ng2-smart-table/issues"
   },
   "license": "MIT",
   "scripts": {
